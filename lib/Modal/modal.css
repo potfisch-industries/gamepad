@@ -1,24 +1,24 @@
 .modal {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100dvh;
-	width: 100vw;
-	background-color: rgba(0, 0, 0, 0.5);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: var(--MODAL_INDEX);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--potfisch-ui-modal-index);
 }
 
 .modalHeader {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 .modalContent {
-	background-color: var(--main-bg-color);
-	border-radius: var(--rounded);
-	padding: 2rem;
+  background-color: var(--potfisch-ui-background);
+  border-radius: var(--potfisch-ui-rounded);
+  padding: 2rem;
 }

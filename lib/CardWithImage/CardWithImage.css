@@ -30,6 +30,6 @@
   .title,
   .subtitle {
     background-color: white !important;
-    color: var(--main-bg-color) !important;
+    color: var(--potfisch-ui-background) !important;
   }
 }

@@ -1,14 +1,14 @@
 .banner {
-	width: 100%;
-	display: flex;
-	text-align: center;
-	justify-content: space-evenly;
-	align-items: center;
-	background-color: var(--main-bg-95);
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--potfisch-ui-background-light);
 }
 .bannerContentWrapper {
-	background-color: var(--main-bg-90);
-	width: 85%;
-	padding: 1.5rem 2rem;
-	font-size: x-large;
+  background-color: var(--potfisch-ui-background-lighter);
+  width: 85%;
+  padding: 1.5rem 2rem;
+  font-size: x-large;
 }
