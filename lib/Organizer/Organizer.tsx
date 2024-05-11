@@ -18,7 +18,7 @@ export interface OrganizerProps {
   selectionMax?: number;
   selectionMin?: number;
   onConfirm: (selected: string[]) => void;
-  onCancel: () => void;
+  onCancel?: () => void;
   gridStyle?: CSSProperties;
 }
 
@@ -97,7 +97,7 @@ export const Organizer = ({
             <div onClick={() => onClick(o.id)}>{o.content}</div>
           ))}
       </div>
-      <button onClick={onCancel}>Cancel Selection</button>
+      {onCancel && <button onClick={onCancel}>Cancel Selection</button>}
       <button onClick={handleConfirm} disabled={invalidSelection}>
         Confirm Selection
       </button>
