@@ -2,7 +2,7 @@
   "name": "potfisch-ui",
   "author": "potfisch-industries",
   "private": false,
-  "version": "1.2.0",
+  "version": "1.3.0",
   "type": "module",
   "main": "dist/potfisch-ui.js",
   "types": "dist/main.d.ts",
