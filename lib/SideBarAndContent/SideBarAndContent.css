@@ -1,0 +1,12 @@
+.contentAndSideBar {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	height: 100dvh;
+}
+.sideBar {
+	border-right: 1px solid;
+	height: 100%;
+}
+.content {
+	padding: 1rem;
+}
