@@ -9,7 +9,7 @@ const meta: Meta<typeof Organizer> = {
 export default meta;
 type Story = StoryObj<typeof Organizer>;
 
-export const FirstStory: Story = {
+export const Basic: Story = {
   args: {
     nameOfOptions: "Pokemon",
     options: [
