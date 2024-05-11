@@ -14,6 +14,7 @@ export { NumberInput } from "./Inputs/NumberInput";
 export { RangeInput } from "./Inputs/Range";
 export { TextAreaInput } from "./Inputs/TextArea";
 export { TextInput } from "./Inputs/TextInput";
+export { LineWithIcon } from "./LineWithIcon/LineWithIcon";
 export { Modal } from "./Modal/Modal";
 export { Organizer } from "./Organizer/Organizer";
 export { Pill } from "./Pill/Pill";
