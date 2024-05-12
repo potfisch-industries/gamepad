@@ -54,15 +54,13 @@ export const Organizer = ({
   const onClick = useCallback(
     (id: string) => {
       if (
-        selected.includes(id) &&
-        (!selectionMin || selected.length > selectionMin)
+        !selected.includes(id) &&
+        (!selectionMax || selected.length < selectionMax)
       ) {
-        setSelected(selected.filter((s) => s !== id));
+        setSelected([...selected, id]);
         return;
       }
-      if (!selectionMax || selected.length < selectionMax) {
-        setSelected([...selected, id]);
-      }
+      setSelected(selected.filter((s) => s !== id));
     },
     [selected]
   );
