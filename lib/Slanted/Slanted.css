@@ -1,6 +1,0 @@
-.slanted {
-  font-size: medium;
-  padding: 0.5rem;
-  background-color: var(--potfisch-ui-background-light);
-  transform: skew(var(--potfisch-ui-slant));
-}

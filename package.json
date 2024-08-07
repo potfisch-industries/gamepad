@@ -6,6 +6,7 @@
   "type": "module",
   "main": "dist/potfisch-ui.js",
   "types": "dist/main.d.ts",
+  "license": "MIT",
   "files": [
     "dist"
   ],
@@ -30,7 +31,6 @@
     "@storybook/addon-essentials": "^8.0.10",
     "@storybook/addon-interactions": "^8.0.10",
     "@storybook/addon-links": "^8.0.10",
-    "@storybook/addon-onboarding": "^8.0.10",
     "@storybook/blocks": "^8.0.10",
     "@storybook/react": "^8.0.10",
     "@storybook/react-vite": "^8.0.10",

@@ -2,23 +2,24 @@ import { ReactNode } from "react";
 import "./Tag.css";
 
 export const Tag = ({
-  tag,
-  children,
-  color,
+  content,
+  onClick,
+  type,
+  style,
 }: {
-  tag?: ReactNode;
-  children: ReactNode;
-  color?: string;
+  content: ReactNode;
+  onClick?: () => void;
+  type: "OUTLINED" | "FILLED";
+  style?: React.CSSProperties;
 }) => {
-  if (!tag) {
-    return children;
-  }
   return (
-    <div>
-      <div style={{ backgroundColor: color ?? "red" }} className="tag">
-        {tag}
-      </div>
-      <div>{children}</div>
+    <div
+      role="button"
+      style={style}
+      className={type === "FILLED" ? "filledTag" : "outlinedTag"}
+      onClick={onClick}
+    >
+      {content}
     </div>
   );
 };
