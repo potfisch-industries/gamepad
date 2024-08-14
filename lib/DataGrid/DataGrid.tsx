@@ -30,7 +30,6 @@ export const DataGrid = ({
   });
 
   const toggleFilter = (newFilter: string) => {
-    console.log("toggle filter to", newFilter);
     if (newFilter === selectedFilter) {
       setSelectedFilter(undefined);
     } else setSelectedFilter(newFilter);
