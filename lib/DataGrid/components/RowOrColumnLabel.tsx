@@ -1,4 +1,4 @@
-import { randomUUID } from "crypto";
+import { v4 } from "uuid";
 import { Tag } from "../../main";
 import { DataPoint } from "../DataGrid";
 
@@ -13,7 +13,7 @@ export const RowOrColumnLabel = ({
     <div onClick={dataPoint.onClick} className={className}>
       {dataPoint.content}
       {(dataPoint.filters ?? []).map((f) => (
-        <Tag key={randomUUID()} content={f} type="FILLED" />
+        <Tag key={v4()} content={f} type="FILLED" />
       ))}
     </div>
   );

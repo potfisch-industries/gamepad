@@ -25,7 +25,6 @@ export const DataGrid = ({
     columnLabels,
     rows,
     rowLabels,
-    filters,
     selectedFilter,
   });
 
