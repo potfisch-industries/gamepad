@@ -1,0 +1,9 @@
+.bubble {
+  aspect-ratio: 1/1;
+  border-radius: 9000px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -37,17 +37,17 @@ export const DataGrid = ({
 
   return (
     <>
-      <FilterBar
-        filters={filters}
-        onChange={toggleFilter}
-        selectedFilter={selectedFilter}
-      />
+      {filters && (
+        <FilterBar
+          filters={filters}
+          onChange={toggleFilter}
+          selectedFilter={selectedFilter}
+        />
+      )}
       <div
         className="datagrid"
         style={{
-          gridTemplateColumns: assembledRows[0]
-            .map(() => "minmax(100px, 1fr) ")
-            .join(""),
+          gridTemplateColumns: assembledRows[0].map(() => "1fr").join(" "),
         }}
       >
         {assembledRows.map((r, rowIndex) =>

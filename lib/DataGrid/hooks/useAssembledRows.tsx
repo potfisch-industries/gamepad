@@ -1,19 +1,17 @@
 import { ReactNode, useMemo } from "react";
-import { Tag } from "../../Tag/Tag";
 import { DataPoint } from "../DataGrid";
 import { DataGridCell } from "../components/DataGridCell";
+import { RowOrColumnLabel } from "../components/RowOrColumnLabel";
 
 export const useAssembledRows = ({
   rowLabels,
   columnLabels,
   rows,
-  filters,
   selectedFilter,
 }: {
   rowLabels: DataPoint[];
   columnLabels: DataPoint[];
   rows: (DataPoint | undefined)[][];
-  filters: string[];
   selectedFilter?: string;
 }) => {
   return useMemo<ReactNode[][]>(() => {
@@ -70,22 +68,5 @@ export const useAssembledRows = ({
     });
 
     return res;
-  }, [rowLabels, columnLabels, rows, filters, selectedFilter]);
-};
-
-export const RowOrColumnLabel = ({
-  dataPoint,
-  className,
-}: {
-  dataPoint: DataPoint;
-  className?: string;
-}) => {
-  return (
-    <div onClick={dataPoint.onClick} className={className}>
-      {dataPoint.content}
-      {(dataPoint.filters ?? []).map((f) => (
-        <Tag content={f} type="FILLED" />
-      ))}
-    </div>
-  );
+  }, [rowLabels, columnLabels, rows, selectedFilter]);
 };

@@ -1,4 +1,5 @@
-import { ReactNode } from "react";
+import { ReactNode, useContext } from "react";
+import { themeContext } from "../ThemeProvider/ThemeProvider";
 import "./Tag.css";
 
 export const Tag = ({
@@ -12,10 +13,16 @@ export const Tag = ({
   type: "OUTLINED" | "FILLED";
   style?: React.CSSProperties;
 }) => {
+  const { highlightColor } = useContext(themeContext);
+
   return (
     <div
       role="button"
-      style={style}
+      style={{
+        ...style,
+        borderColor: type == "OUTLINED" ? highlightColor : "inherit",
+        backgroundColor: type == "FILLED" ? highlightColor : "inherit",
+      }}
       className={type === "FILLED" ? "filledTag" : "outlinedTag"}
       onClick={onClick}
     >
