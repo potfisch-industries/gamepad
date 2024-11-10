@@ -24,6 +24,7 @@ export const Standard = {
         }}
         id={"A"}
         disabled={false}
+        zIndex={1}
       />
     );
   },

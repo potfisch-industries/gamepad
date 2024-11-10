@@ -8,10 +8,15 @@ export const GamePad = ({
   buttons,
   framerate,
   children,
+  zIndex,
 }: {
-  buttons: Omit<GamePadButtonProps, "registerHold" | "unregisterHold">[];
+  buttons: Omit<
+    GamePadButtonProps,
+    "registerHold" | "unregisterHold" | "zIndex"
+  >[];
   framerate: number;
   children: ReactElement;
+  zIndex: number;
 }) => {
   const [heldButtonId, setHeldButtonId] = useState<string | undefined>();
 
@@ -65,6 +70,7 @@ export const GamePad = ({
         <GamePadButton
           key={i}
           {...b}
+          zIndex={zIndex}
           registerHold={() => setHeldButtonId(b.id)}
           unregisterHold={() => setHeldButtonId(undefined)}
         />

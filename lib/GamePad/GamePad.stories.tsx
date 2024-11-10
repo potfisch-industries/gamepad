@@ -34,6 +34,7 @@ export const Standard = {
             },
           ]}
           framerate={20}
+          zIndex={1}
         >
           <div> Da Game: {keyLog.map((k) => k)}</div>
         </GamePad>

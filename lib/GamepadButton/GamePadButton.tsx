@@ -15,6 +15,7 @@ export interface GamePadButtonProps {
   disabled: boolean;
   registerHold: () => void;
   unregisterHold: () => void;
+  zIndex: number;
 }
 export const GamePadButton = ({
   label,
@@ -24,6 +25,7 @@ export const GamePadButton = ({
   registerHold,
   unregisterHold,
   onClick,
+  zIndex,
 }: GamePadButtonProps) => {
   useEffect(() => {});
   return (
@@ -37,7 +39,7 @@ export const GamePadButton = ({
       onTouchEnd={unregisterHold}
       onTouchCancel={unregisterHold}
       className="gamePadButton"
-      style={{ position: "absolute", ...position }}
+      style={{ position: "absolute", ...position, zIndex }}
     >
       {label}
     </button>

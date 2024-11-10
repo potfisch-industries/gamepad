@@ -1,15 +1,9 @@
-# Potfisch Industries Library of Generic React Components:
+# Potfisch Industries Gamepad:
 
-## Components:
+Define a button overlay for your react games
 
-### ThemeProvider: provide your own colors and other variables
+## Click/Touchable Buttons
 
-### DataGrid: display 2 dimensional content with labels and filters
+## Keyboard Handlers for Buttons
 
-### FilterBar: select a Tag out of a group
-
-### Tag: a small elliptical Tag
-
-### Bubble: a circular UI Element
-
-### StickyStack: display 2 dimensional content with labels and filters
+## Hold Behaviour for Button Press and Key hold
